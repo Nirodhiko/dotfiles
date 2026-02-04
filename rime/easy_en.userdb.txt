@@ -1,0 +1,10 @@
+# Rime user dictionary
+#@/db_name	easy_en
+#@/db_type	userdb
+#@/rime_version	1.13.1
+#@/tick	4
+#@/user_id	71976ba1-830a-45d3-bed3-0cdf4d8efa78
+I 	I	c=2 d=1.96531 t=4
+go 	go	c=2 d=1.99501 t=4
+to 	to	c=2 d=1.98506 t=4
+wanton 	wanton	c=1 d=0.99005 t=4

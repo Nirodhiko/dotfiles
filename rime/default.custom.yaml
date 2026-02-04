@@ -1,18 +1,15 @@
+customization:
+  distribution_code_name: Weasel
+  distribution_version: 0.17.4
+  generator: "Rime::SwitcherSettings"
+  modified_time: "Wed Feb  4 10:02:09 2026"
+  rime_version: 1.13.1
 patch:
-  schema_list:
-    - schema: luna_pinyin
-
-  switcher/hotkeys:
-    - "Shift+space"
-
-  menu/page_size: 7
-
   key_binder:
-    bindings:
-      # Vim style
-      - { when: composing, accept: Control+h, send: Up }
-      - { when: composing, accept: Control+l, send: Down }
-      - { when: has_menu, accept: Control+k, send: Page_Up }
-      - { when: has_menu, accept: Control+j, send: Page_Down }
-      - { when: composing, accept: Shift+Tab, send: Up }
-      - { when: composing, accept: Tab, send: Down }
+    bindings: [{accept: "Control+h", send: Up, when: composing}, {accept: "Control+l", send: Down, when: composing}, {accept: "Control+k", send: Page_Up, when: has_menu}, {accept: "Control+j", send: Page_Down, when: has_menu}, {accept: "Shift+Tab", send: Up, when: composing}, {accept: Tab, send: Down, when: composing}]
+  "menu/page_size": 7
+  schema_list:
+    - {schema: luna_pinyin}
+    - {schema: easy_en}
+  "switcher/hotkeys":
+    - "Shift+space"
